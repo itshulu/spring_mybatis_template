@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sl.dao.UserMapper">
+<select id="selectAllUsers" resultType="com.sl.entity.User">
+  select * from `user`
+</select>
+
+<!--
+<select id="selectUserByEmailAndPassword" resultType="com.gg.entity.User">
+  select * from `user` where email=#{email} and password=#{password}
+</select>
+
+<select id="selectUserByTelAndPassword" resultType="com.gg.entity.User">
+  select * from `user` where tel=#{tel} and password=#{password}
+</select>
+
+<insert id="insertUser">
+<selectKey order="BEFORE" resultType="string" keyProperty="uid">
+   select replace(uuid(),"-","")  from dual
+</selectKey>
+   insert into `user` values(#{uid},#{email},#{tel},#{email},#{password})
+</insert>
+-->
+
+
+
+
+</mapper>
